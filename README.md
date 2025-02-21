@@ -5,7 +5,7 @@ This repository provides a comprehensive implementation and analysis of the **SA
 - **Theoretical foundations** of SAGA, including detailed convergence proofs.
   
 - **Experimental validation** on real datasets, comparing SAGA to other optimization methods (SAG, SVRG, and SGD).
-- 
+  
 - **Jupyter Notebook** (`SAGA.ipynb`) containing all experiments and visualizations.
 
 ---
@@ -17,9 +17,7 @@ We consider two optimization problems commonly used in machine learning:
 ### 1. **Ridge Regression**
 
 The objective is to solve the following strongly convex optimization problem:
-$$
-F_{\text{ridge}}(w) = \frac{1}{2n} \|Xw - y\|^2 + \frac{\lambda}{2} \|w\|^2,
-$$
+$$F_{\text{ridge}}(w) = \frac{1}{2n} \|Xw - y\|^2 + \frac{\lambda}{2} \|w\|^2,$$
 where:
 - $X \in \mathbb{R}^{n \times d}$ is the feature matrix,
 - $y \in \mathbb{R}^n$ is the target vector,
