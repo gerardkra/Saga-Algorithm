@@ -1,8 +1,11 @@
 # SAGA Algorithm: Theory, Proofs, and Experimental Validation
 
 This repository provides a comprehensive implementation and analysis of the **SAGA algorithm**, a state-of-the-art incremental gradient method with variance reduction for optimization. The project includes:
+
 - **Theoretical foundations** of SAGA, including detailed convergence proofs.
+  
 - **Experimental validation** on real datasets, comparing SAGA to other optimization methods (SAG, SVRG, and SGD).
+- 
 - **Jupyter Notebook** (`SAGA.ipynb`) containing all experiments and visualizations.
 
 ---
@@ -12,6 +15,7 @@ This repository provides a comprehensive implementation and analysis of the **SA
 We consider two optimization problems commonly used in machine learning:
 
 ### 1. **Ridge Regression**
+
 The objective is to solve the following strongly convex optimization problem:
 \[
 F_{\text{ridge}}(w) = \frac{1}{2n} \|Xw - y\|^2 + \frac{\lambda}{2} \|w\|^2,
