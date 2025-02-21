@@ -77,10 +77,10 @@ We compare the following optimization algorithms for Ridge Regression and Lasso:
 We conduct numerical experiments on the **Diabetes dataset** from scikit-learn, which contains 442 samples and 10 features. The experiments are designed to validate the theoretical convergence rates of SAGA and compare its performance to SAG, SVRG, and SGD.
 
 ### 1. **Ridge Regression**
-![Ridge Regression Convergence](images/RidgeTrain.jpg)
+![Ridge Regression Convergence](RidgeTrain.jpg)
 
 ### 2. **Lasso**
-![Lasso Convergence](images/LassoTrain.jpg)
+![Lasso Convergence](LassoTrain.jpg)
 
 
 Please refer to the original paper, `defazio_2014.pdf`, available in this repository, for a complete and rigorous analysis. Each step of the theoretical proofs and algorithmic details is meticulously documented in the paper.
