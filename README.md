@@ -17,16 +17,16 @@ We consider two optimization problems commonly used in machine learning:
 ### 1. **Ridge Regression**
 
 The objective is to solve the following strongly convex optimization problem:
-\[
+$$
 F_{\text{ridge}}(w) = \frac{1}{2n} \|Xw - y\|^2 + \frac{\lambda}{2} \|w\|^2,
-\]
+$$
 where:
-- \(X \in \mathbb{R}^{n \times d}\) is the feature matrix,
-- \(y \in \mathbb{R}^n\) is the target vector,
-- \(w \in \mathbb{R}^d\) is the weight vector to be optimized,
-- \(\lambda > 0\) is the regularization parameter (set to \(1 \times 10^{-5}\) in our experiments).
+- $X \in \mathbb{R}^{n \times d}$ is the feature matrix,
+- $y \in \mathbb{R}^n$ is the target vector,
+- $w \in \mathbb{R}^d$ is the weight vector to be optimized,
+- $\lambda > 0$ is the regularization parameter (set to $1 \times 10^{-5}$ in our experiments).
 
-The \(L_2\) regularization term ensures strong convexity, which guarantees a unique global minimum.
+The $L_2$ regularization term ensures strong convexity, which guarantees a unique global minimum.
 
 ---
 
