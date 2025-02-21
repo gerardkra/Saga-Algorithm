@@ -77,14 +77,11 @@ We compare the following optimization algorithms for Ridge Regression and Lasso:
 We conduct numerical experiments on the **Diabetes dataset** from scikit-learn, which contains 442 samples and 10 features. The experiments are designed to validate the theoretical convergence rates of SAGA and compare its performance to SAG, SVRG, and SGD.
 
 ### 1. **Ridge Regression**
-- **Objective**: Minimize $F_{\text{ridge}}(w)$.
-- **Methods**: Standard gradient methods (SGD, SAG, SVRG, SAGA).
-- **Results**: SAGA and SVRG achieve linear convergence, outperforming SGD and SAG in terms of convergence speed.
+![Ridge Regression Convergence](RidgeTrain.png)
 
 ### 2. **Lasso**
-- **Objective**: Minimize $F_{\text{lasso}}(w)$.
-- **Methods**: Proximal variants (Prox-SGD, Prox-SAG, Prox-SAGA, Prox-SVRG) to handle the $L_1$ regularization term.
-- **Results**: SAGA and SVRG achieve faster convergence compared to SGD and SAG, demonstrating the effectiveness of variance reduction for non-smooth objectives.
+![Lasso Convergence](LassoTrain.png)
+
 
 Please refer to the original paper, `defazio_2014.pdf`, available in this repository, for a complete and rigorous analysis. Each step of the theoretical proofs and algorithmic details is meticulously documented in the paper.
 
