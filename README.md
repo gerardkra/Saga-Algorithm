@@ -86,6 +86,7 @@ We conduct numerical experiments on the **Diabetes dataset** from scikit-learn, 
 - **Methods**: Proximal variants (Prox-SGD, Prox-SAG, Prox-SAGA, Prox-SVRG) to handle the $L_1$ regularization term.
 - **Results**: SAGA and SVRG achieve faster convergence compared to SGD and SAG, demonstrating the effectiveness of variance reduction for non-smooth objectives.
 
+Please refer to the original paper, `defazio_2014.pdf`, available in this repository, for a complete and rigorous analysis. Each step of the theoretical proofs and algorithmic details is meticulously documented in the paper.
 
 ## References
 - Defazio, A., Bach, F., & Lacoste-Julien, S. (2014). **SAGA: A Fast Incremental Gradient Method with Support for Non-Strongly Convex Composite Objectives**. *Advances in Neural Information Processing Systems (NeurIPS)*.
