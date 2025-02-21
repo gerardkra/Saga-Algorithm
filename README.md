@@ -1,6 +1,6 @@
 # SAGA Algorithm: An approch For Experimental Validation
 
-This repository provides a comprehensive implementation and analysis of the **SAGA algorithm**, a state-of-the-art incremental gradient method with variance reduction for optimization introduced by \textit{Defazio, Bach et Lacoste-Julien}.
+This repository provides a comprehensive implementation and analysis of the **SAGA algorithm**, a state-of-the-art incremental gradient method with variance reduction for optimization introduced by $\textit{Defazio, Bach et Lacoste\-Julien}$.
 
 ---
 
@@ -24,7 +24,7 @@ The $L_2$ regularization term ensures strong convexity, which guarantees a uniqu
 
 ### 2. **Lasso**
 The objective is to solve the following convex (but not strongly convex) optimization problem:
-$$F_{\text{lasso}}(w) = \frac{1}{2n} \|Xw - y\|^2 + \lambda \|w\|_1,$$
+$$F_{\text{lasso}}(w) = \frac{1}{2n} \parallel Xw - y\parallel^2 + \lambda \parallel w\parallel_1,$$
 
 where:
 - $\parallel w\parallel_1$ is the $L_1$ norm of the weight vector,
