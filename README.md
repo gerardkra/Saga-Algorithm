@@ -6,7 +6,7 @@ This repository provides a comprehensive implementation and analysis of the **SA
 
 ## Problem Setting
 
-We consider two optimization problems commonly used in machine learning:
+We consider two optimization problems commonly used in machine learning: 
 
 ### 1. **Ridge Regression**
 
