@@ -1,12 +1,6 @@
-# SAGA Algorithm: Theory, Proofs, and Experimental Validation
+# SAGA Algorithm: An approch For Experimental Validation
 
-This repository provides a comprehensive implementation and analysis of the **SAGA algorithm**, a state-of-the-art incremental gradient method with variance reduction for optimization. The project includes:
-
-- **Theoretical foundations** of SAGA, including detailed convergence proofs.
-  
-- **Experimental validation** on real datasets, comparing SAGA to other optimization methods (SAG, SVRG, and SGD).
-  
-- **Jupyter Notebook** (`SAGA.ipynb`) containing all experiments and visualizations.
+This repository provides a comprehensive implementation and analysis of the **SAGA algorithm**, a state-of-the-art incremental gradient method with variance reduction for optimization introduced by \textit{Defazio, Bach et Lacoste-Julien}.
 
 ---
 
@@ -17,7 +11,7 @@ We consider two optimization problems commonly used in machine learning:
 ### 1. **Ridge Regression**
 
 The objective is to solve the following strongly convex optimization problem:
-$$F_{\text{ridge}}(w) = \frac{1}{2n} \parallelXw - y\parallel^2 + \frac{\lambda}{2} \parallel w\parallel^2,$$
+$$F_{\text{ridge}}(w) = \frac{1}{2n} \parallel Xw - y\parallel^2 + \frac{\lambda}{2} \parallel w\parallel^2,$$
 where:
 - $X \in \mathbb{R}^{n \times d}$ is the feature matrix,
 - $y \in \mathbb{R}^n$ is the target vector,
@@ -33,7 +27,7 @@ The objective is to solve the following convex (but not strongly convex) optimiz
 $$F_{\text{lasso}}(w) = \frac{1}{2n} \|Xw - y\|^2 + \lambda \|w\|_1,$$
 
 where:
-- $\parallelw\parallel_1$ is the $L_1$ norm of the weight vector,
+- $\parallel w\parallel_1$ is the $L_1$ norm of the weight vector,
 - $\lambda > 0$ is the regularization parameter (set to $1.0$ in our experiments).
 
 The $L_1$ regularization term promotes sparsity in the solution, making Lasso particularly useful for feature selection.
